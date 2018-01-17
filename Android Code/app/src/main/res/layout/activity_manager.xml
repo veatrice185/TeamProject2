@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.uuser.aums.ManagerActivity"
+    android:background="@drawable/selectumbrella">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentStart="true">
+
+        <com.example.uuser.aums.BoxButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="1번"
+            android:id="@+id/manage1"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_alignTop="@+id/manage2"
+            android:layout_alignParentStart="true"
+            android:layout_margin="3dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:textSize="30dp" />
+
+        <com.example.uuser.aums.BoxButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="2번"
+            android:id="@+id/manage2"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:textSize="30dp" />
+
+        <com.example.uuser.aums.BoxButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="3번"
+            android:id="@+id/manage3"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_alignTop="@+id/manage4"
+            android:layout_toStartOf="@+id/manage4"
+            android:layout_margin="3dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:textSize="30dp" />
+
+        <com.example.uuser.aums.BoxButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="4번"
+            android:id="@+id/manage4"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_marginRight="0dp"
+            android:layout_alignTop="@+id/manage2"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:text="    완료    "
+        android:id="@+id/ButtonFinish"
+        android:layout_marginBottom="98dp"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_marginEnd="210dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="부러진 우산 수거"
+        android:id="@+id/ButtonCollect"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="180dp" />
+
+</RelativeLayout>

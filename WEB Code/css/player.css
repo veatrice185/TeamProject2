@@ -1,0 +1,29 @@
+.player-thumnail{
+	display:flex;
+	width:50px;
+	height:50px;
+}
+.player-title{
+	color:white;
+	font-family: Heveica;
+}
+.player-singer{
+	display: flex;
+	padding: 10;
+	color:white;
+	font-family: Heveica;
+}
+#musicFrame{
+	display: none;
+}
+.right{
+	display: in-line;
+	float:right;
+}
+#playlist{
+	overflow:scroll;
+	backgroud-color: red;
+	color:red;
+	width: 100%;
+	height: 50px;
+}

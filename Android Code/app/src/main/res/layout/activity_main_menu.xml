@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.uuser.aums.MainMenuActivity"
+    android:background="@drawable/selectmenu">
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:text="빌리기"
+        android:id="@+id/buttonRent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="200dp"
+        android:nestedScrollingEnabled="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:text="부러진 우산 신고"
+        android:id="@+id/buttonReport"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignTop="@+id/buttonReturn"
+        android:layout_alignParentEnd="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:text="반납하기"
+        android:id="@+id/buttonReturn"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignTop="@+id/buttonRent"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:text="우산 관리"
+        android:id="@+id/ManagerButton"
+        android:visibility="invisible"
+        android:textSize="30dp"
+        android:layout_above="@+id/ButtonLogout"
+        android:layout_alignStart="@+id/buttonReturn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/welcomText"
+        android:textSize="28dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:id="@+id/ButtonLogout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:allowUndo="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메뉴를 선택해주세요"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+</RelativeLayout>
